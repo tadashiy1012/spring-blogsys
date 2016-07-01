@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css">
+  <title>spring-blogsys sample</title>
+</head>
+<body>
+  <div id="header">
+    <section>
+      <h1>spring-blogsys sample</h1>
+    </section>
+  </div>
+  <div id="main">
+    <section id="left">
+      <h2>nav</h2>
+      <h3>recent entries</h3>
+      <ul id="recentLs"></ul>
+    </section>
+    <section id="right">
+      <h2>contents</h2>
+      <div id="contents"></div>
+      <h2>post</h2>
+      <form action="/blog" method="POST" id="postForm">
+        <label for="title">title</label>
+        <br />
+        <input type="text" name="title" id="inTitle" />
+        <br />
+        <label for="body">body</label>
+        <br />
+        <textarea name="body" id="inBody" rows="5"></textarea>
+        <br />
+        <input type="hidden" name="author" value="yama" id="author">
+        <input type="submit" value="post" />
+      </form>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
